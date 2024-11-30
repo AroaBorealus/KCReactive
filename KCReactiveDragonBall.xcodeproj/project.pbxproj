@@ -6,101 +6,61 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		D61553FE2CF8DA8E000CEEAC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D61553DF2CF8DA8D000CEEAC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D61553E62CF8DA8D000CEEAC;
-			remoteInfo = KCReactiveDragonBall;
-		};
-		D61554082CF8DA8E000CEEAC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D61553DF2CF8DA8D000CEEAC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D61553E62CF8DA8D000CEEAC;
-			remoteInfo = KCReactiveDragonBall;
-		};
-/* End PBXContainerItemProxy section */
+/* Begin PBXBuildFile section */
+		D61556612CFA2403000CEEAC /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D61556602CFA2403000CEEAC /* KeychainSwift */; };
+		D64B4C0C2CF8D2FB00FAE090 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D64B4C0B2CF8D2FB00FAE090 /* CombineCocoa */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D61553E72CF8DA8D000CEEAC /* KCReactiveDragonBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KCReactiveDragonBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D61553FD2CF8DA8E000CEEAC /* KCReactiveDragonBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCReactiveDragonBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D61554072CF8DA8E000CEEAC /* KCReactiveDragonBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCReactiveDragonBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66437812CE544A000491423 /* KCReactiveDragonBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KCReactiveDragonBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D615540F2CF8DA8E000CEEAC /* Exceptions for "KCReactiveDragonBall" folder in "KCReactiveDragonBall" target */ = {
+		D66437932CE544A100491423 /* Exceptions for "KCReactiveDragonBall" folder in "KCReactiveDragonBall" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				"Supporting Files/Info.plist",
 			);
-			target = D61553E62CF8DA8D000CEEAC /* KCReactiveDragonBall */;
+			target = D66437802CE544A000491423 /* KCReactiveDragonBall */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D61553E92CF8DA8D000CEEAC /* KCReactiveDragonBall */ = {
+		D66437832CE544A000491423 /* KCReactiveDragonBall */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D615540F2CF8DA8E000CEEAC /* Exceptions for "KCReactiveDragonBall" folder in "KCReactiveDragonBall" target */,
+				D66437932CE544A100491423 /* Exceptions for "KCReactiveDragonBall" folder in "KCReactiveDragonBall" target */,
 			);
 			path = KCReactiveDragonBall;
-			sourceTree = "<group>";
-		};
-		D61554002CF8DA8E000CEEAC /* KCReactiveDragonBallTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KCReactiveDragonBallTests;
-			sourceTree = "<group>";
-		};
-		D615540A2CF8DA8E000CEEAC /* KCReactiveDragonBallUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KCReactiveDragonBallUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D61553E42CF8DA8D000CEEAC /* Frameworks */ = {
+		D664377E2CE544A000491423 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D61553FA2CF8DA8E000CEEAC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D61554042CF8DA8E000CEEAC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D61556612CFA2403000CEEAC /* KeychainSwift in Frameworks */,
+				D64B4C0C2CF8D2FB00FAE090 /* CombineCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D61553DE2CF8DA8D000CEEAC = {
+		D66437782CE544A000491423 = {
 			isa = PBXGroup;
 			children = (
-				D61553E92CF8DA8D000CEEAC /* KCReactiveDragonBall */,
-				D61554002CF8DA8E000CEEAC /* KCReactiveDragonBallTests */,
-				D615540A2CF8DA8E000CEEAC /* KCReactiveDragonBallUITests */,
-				D61553E82CF8DA8D000CEEAC /* Products */,
+				D66437832CE544A000491423 /* KCReactiveDragonBall */,
+				D66437822CE544A000491423 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D61553E82CF8DA8D000CEEAC /* Products */ = {
+		D66437822CE544A000491423 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D61553E72CF8DA8D000CEEAC /* KCReactiveDragonBall.app */,
-				D61553FD2CF8DA8E000CEEAC /* KCReactiveDragonBallTests.xctest */,
-				D61554072CF8DA8E000CEEAC /* KCReactiveDragonBallUITests.xctest */,
+				D66437812CE544A000491423 /* KCReactiveDragonBall.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,134 +68,70 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D61553E62CF8DA8D000CEEAC /* KCReactiveDragonBall */ = {
+		D66437802CE544A000491423 /* KCReactiveDragonBall */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D61554102CF8DA8E000CEEAC /* Build configuration list for PBXNativeTarget "KCReactiveDragonBall" */;
+			buildConfigurationList = D66437942CE544A100491423 /* Build configuration list for PBXNativeTarget "KCReactiveDragonBall" */;
 			buildPhases = (
-				D61553E32CF8DA8D000CEEAC /* Sources */,
-				D61553E42CF8DA8D000CEEAC /* Frameworks */,
-				D61553E52CF8DA8D000CEEAC /* Resources */,
+				D664377D2CE544A000491423 /* Sources */,
+				D664377E2CE544A000491423 /* Frameworks */,
+				D664377F2CE544A000491423 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D61553E92CF8DA8D000CEEAC /* KCReactiveDragonBall */,
+				D66437832CE544A000491423 /* KCReactiveDragonBall */,
 			);
 			name = KCReactiveDragonBall;
 			packageProductDependencies = (
+				D64B4C0B2CF8D2FB00FAE090 /* CombineCocoa */,
+				D61556602CFA2403000CEEAC /* KeychainSwift */,
 			);
-			productName = KCReactiveDragonBall;
-			productReference = D61553E72CF8DA8D000CEEAC /* KCReactiveDragonBall.app */;
+			productName = BootcampsCombine;
+			productReference = D66437812CE544A000491423 /* KCReactiveDragonBall.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D61553FC2CF8DA8E000CEEAC /* KCReactiveDragonBallTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D61554152CF8DA8E000CEEAC /* Build configuration list for PBXNativeTarget "KCReactiveDragonBallTests" */;
-			buildPhases = (
-				D61553F92CF8DA8E000CEEAC /* Sources */,
-				D61553FA2CF8DA8E000CEEAC /* Frameworks */,
-				D61553FB2CF8DA8E000CEEAC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D61553FF2CF8DA8E000CEEAC /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D61554002CF8DA8E000CEEAC /* KCReactiveDragonBallTests */,
-			);
-			name = KCReactiveDragonBallTests;
-			packageProductDependencies = (
-			);
-			productName = KCReactiveDragonBallTests;
-			productReference = D61553FD2CF8DA8E000CEEAC /* KCReactiveDragonBallTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D61554062CF8DA8E000CEEAC /* KCReactiveDragonBallUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D61554182CF8DA8E000CEEAC /* Build configuration list for PBXNativeTarget "KCReactiveDragonBallUITests" */;
-			buildPhases = (
-				D61554032CF8DA8E000CEEAC /* Sources */,
-				D61554042CF8DA8E000CEEAC /* Frameworks */,
-				D61554052CF8DA8E000CEEAC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D61554092CF8DA8E000CEEAC /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D615540A2CF8DA8E000CEEAC /* KCReactiveDragonBallUITests */,
-			);
-			name = KCReactiveDragonBallUITests;
-			packageProductDependencies = (
-			);
-			productName = KCReactiveDragonBallUITests;
-			productReference = D61554072CF8DA8E000CEEAC /* KCReactiveDragonBallUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D61553DF2CF8DA8D000CEEAC /* Project object */ = {
+		D66437792CE544A000491423 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					D61553E62CF8DA8D000CEEAC = {
+					D66437802CE544A000491423 = {
 						CreatedOnToolsVersion = 16.0;
-					};
-					D61553FC2CF8DA8E000CEEAC = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = D61553E62CF8DA8D000CEEAC;
-					};
-					D61554062CF8DA8E000CEEAC = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = D61553E62CF8DA8D000CEEAC;
 					};
 				};
 			};
-			buildConfigurationList = D61553E22CF8DA8D000CEEAC /* Build configuration list for PBXProject "KCReactiveDragonBall" */;
+			buildConfigurationList = D664377C2CE544A000491423 /* Build configuration list for PBXProject "KCReactiveDragonBall" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = D61553DE2CF8DA8D000CEEAC;
+			mainGroup = D66437782CE544A000491423;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D64B4C0A2CF8D2FB00FAE090 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+				D615565F2CFA2403000CEEAC /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = D61553E82CF8DA8D000CEEAC /* Products */;
+			productRefGroup = D66437822CE544A000491423 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D61553E62CF8DA8D000CEEAC /* KCReactiveDragonBall */,
-				D61553FC2CF8DA8E000CEEAC /* KCReactiveDragonBallTests */,
-				D61554062CF8DA8E000CEEAC /* KCReactiveDragonBallUITests */,
+				D66437802CE544A000491423 /* KCReactiveDragonBall */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D61553E52CF8DA8D000CEEAC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D61553FB2CF8DA8E000CEEAC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D61554052CF8DA8E000CEEAC /* Resources */ = {
+		D664377F2CE544A000491423 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,21 +141,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D61553E32CF8DA8D000CEEAC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D61553F92CF8DA8E000CEEAC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D61554032CF8DA8E000CEEAC /* Sources */ = {
+		D664377D2CE544A000491423 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,21 +150,8 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		D61553FF2CF8DA8E000CEEAC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D61553E62CF8DA8D000CEEAC /* KCReactiveDragonBall */;
-			targetProxy = D61553FE2CF8DA8E000CEEAC /* PBXContainerItemProxy */;
-		};
-		D61554092CF8DA8E000CEEAC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D61553E62CF8DA8D000CEEAC /* KCReactiveDragonBall */;
-			targetProxy = D61554082CF8DA8E000CEEAC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		D61554112CF8DA8E000CEEAC /* Debug */ = {
+		D66437952CE544A100491423 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -291,26 +160,30 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6PFU32ZGFM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KCReactiveDragonBall/Info.plist;
+				INFOPLIST_FILE = "KCReactiveDragonBall/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aroaborealus.KCReactiveDragonBall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aroaborealus.BootcampsCombine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D61554122CF8DA8E000CEEAC /* Release */ = {
+		D66437962CE544A100491423 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,26 +192,30 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6PFU32ZGFM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KCReactiveDragonBall/Info.plist;
+				INFOPLIST_FILE = "KCReactiveDragonBall/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aroaborealus.KCReactiveDragonBall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aroaborealus.BootcampsCombine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		D61554132CF8DA8E000CEEAC /* Debug */ = {
+		D66437972CE544A100491423 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -401,7 +278,7 @@
 			};
 			name = Debug;
 		};
-		D61554142CF8DA8E000CEEAC /* Release */ = {
+		D66437982CE544A100491423 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -457,118 +334,60 @@
 			};
 			name = Release;
 		};
-		D61554162CF8DA8E000CEEAC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6PFU32ZGFM;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aroaborealus.KCReactiveDragonBallTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KCReactiveDragonBall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KCReactiveDragonBall";
-			};
-			name = Debug;
-		};
-		D61554172CF8DA8E000CEEAC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6PFU32ZGFM;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aroaborealus.KCReactiveDragonBallTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KCReactiveDragonBall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KCReactiveDragonBall";
-			};
-			name = Release;
-		};
-		D61554192CF8DA8E000CEEAC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6PFU32ZGFM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aroaborealus.KCReactiveDragonBallUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KCReactiveDragonBall;
-			};
-			name = Debug;
-		};
-		D615541A2CF8DA8E000CEEAC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6PFU32ZGFM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aroaborealus.KCReactiveDragonBallUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KCReactiveDragonBall;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D61553E22CF8DA8D000CEEAC /* Build configuration list for PBXProject "KCReactiveDragonBall" */ = {
+		D664377C2CE544A000491423 /* Build configuration list for PBXProject "KCReactiveDragonBall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D61554132CF8DA8E000CEEAC /* Debug */,
-				D61554142CF8DA8E000CEEAC /* Release */,
+				D66437972CE544A100491423 /* Debug */,
+				D66437982CE544A100491423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D61554102CF8DA8E000CEEAC /* Build configuration list for PBXNativeTarget "KCReactiveDragonBall" */ = {
+		D66437942CE544A100491423 /* Build configuration list for PBXNativeTarget "KCReactiveDragonBall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D61554112CF8DA8E000CEEAC /* Debug */,
-				D61554122CF8DA8E000CEEAC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D61554152CF8DA8E000CEEAC /* Build configuration list for PBXNativeTarget "KCReactiveDragonBallTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D61554162CF8DA8E000CEEAC /* Debug */,
-				D61554172CF8DA8E000CEEAC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D61554182CF8DA8E000CEEAC /* Build configuration list for PBXNativeTarget "KCReactiveDragonBallUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D61554192CF8DA8E000CEEAC /* Debug */,
-				D615541A2CF8DA8E000CEEAC /* Release */,
+				D66437952CE544A100491423 /* Debug */,
+				D66437962CE544A100491423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D615565F2CFA2403000CEEAC /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+		D64B4C0A2CF8D2FB00FAE090 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D61556602CFA2403000CEEAC /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D615565F2CFA2403000CEEAC /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		D64B4C0B2CF8D2FB00FAE090 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D64B4C0A2CF8D2FB00FAE090 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = D61553DF2CF8DA8D000CEEAC /* Project object */;
+	rootObject = D66437792CE544A000491423 /* Project object */;
 }
