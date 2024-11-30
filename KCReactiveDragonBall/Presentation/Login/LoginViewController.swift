@@ -73,7 +73,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         activityIndicator.stopAnimating()
         errorLabel.isHidden = true
         print("FUNCIONA")
-//        self.present(HomeBuilder().build(), animated: true)
+        self.present(HomeBuilder().build(), animated: true)
     }
         
     private func caseError(_ reason: String) {

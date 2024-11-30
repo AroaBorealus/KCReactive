@@ -11,31 +11,40 @@ enum HomeStates: Equatable {
     case loading
     case ready
     case error(reason: String)
+    case logout
+    case none
 }
 
 final class HomeViewModel {
     let useCase: GetAllCharactersUseCaseContract
-    var onStateChanged = Binding<HomeStates>()
-    var characters: [DBCharacter] = []
+    @Published var characters: [DBCharacter] = []
+    @Published var homeState: HomeStates
+
     
     init(_ useCase: GetAllCharactersUseCaseContract) {
         self.useCase = useCase
+        self.homeState = .none
     }
     
-    func load() {
-        onStateChanged.update(.loading)
-        useCase.execute { [weak self ] result in
-            switch result {
-            case .success(let characterArray):
-                guard let characterArrayUnwrapped = characterArray else {
-                    self?.onStateChanged.update(.error(reason: "Character array not found"))
-                    return
-                }
-                self?.characters = characterArrayUnwrapped
-                self?.onStateChanged.update(.ready)
-            case .failure(let error):
-                self?.onStateChanged.update(.error(reason: error.reason))
+    func load() async {
+        self.homeState = .loading
+        do {
+            let apiCharacters = try await useCase.execute()
+            guard let characters = apiCharacters, !characters.isEmpty else {
+                throw GetAllCharactersUseCaseError(reason: "Character array found empty")
             }
+            
+            self.characters = characters
+            self.homeState = .ready
+        } catch let error as GetAllCharactersUseCaseError {
+            self.homeState = .error(reason: error.reason)
+        } catch {
+            self.homeState = .error(reason: "A home error has occurred")
         }
+    }
+    
+    func logoutProcess(){
+        SessionDataSources.shared.deleteSession()
+        self.homeState = .logout
     }
 }

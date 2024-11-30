@@ -58,7 +58,7 @@ class SplashViewController: UIViewController {
 
     private func caseHasToken() {
         activityIndicator.stopAnimating()
-        self.present(LoginBuilder().build(), animated: true)
+        self.present(HomeBuilder().build(), animated: true)
     }
 
     private func caseNoToken() {

@@ -6,15 +6,19 @@
 //
 
 import UIKit
+import Combine
 
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     let viewModel: HomeViewModel
+    private var subscriptor = Set<AnyCancellable>()
+
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var errorStackView: UIStackView!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var retryButton: UIButton!
+    
     init(_ viewModel: HomeViewModel) {
         self.viewModel = viewModel
         super.init(nibName: "HomeView", bundle: Bundle(for: type(of: self)))
@@ -28,7 +32,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         configureLogoutButton()
-        configureReverseButton()
         
         bind()
         collectionView.dataSource = self
@@ -37,7 +40,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         collectionView.register(CharacterCollectionViewCell.nib, forCellWithReuseIdentifier: CharacterCollectionViewCell.reuseIdentifier)
         
         title = "Home"
-        viewModel.load()
+        Task {
+            await viewModel.load()
+        }
     }
     
     private func configureLogoutButton() {
@@ -51,30 +56,35 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         viewModel.logoutProcess()
     }
     
-    private func configureReverseButton() {
-        let reverseIcon = UIImage(systemName: "arrow.up.arrow.down.square")
-        let reverseButton = UIBarButtonItem(image: reverseIcon, style: .plain, target: self, action: #selector(reverseButtonTapped))
-        reverseButton.tintColor = .label
-        navigationItem.leftBarButtonItem = reverseButton
-    }
-    
-    @objc func reverseButtonTapped() {
-        viewModel.reverseCharacters()
-        collectionView.reloadData()
-    }
     
     func bind(){
-        viewModel.onStateChanged.bind { [weak self] state in
-            switch state {
-            case .loading:
-                self?.caseLoading()
-            case .ready:
-                self?.caseReady()
-            case .logout:
-                self?.present(LoginBuilder().build(), animated: true)
-            case .error(let reason):
-                self?.caseError(reason)
+        viewModel.$characters
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.collectionView.reloadData()
             }
+            .store(in: &subscriptor)
+        
+        viewModel.$homeState
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] state in
+                self?.stateChanged(state)
+            }
+            .store(in: &subscriptor)
+    }
+    
+    func stateChanged(_ currentState: HomeStates) {
+        switch currentState{
+        case .loading:
+            caseLoading()
+        case .ready:
+            caseReady()
+        case .logout:
+            caseLogout()
+        case .error(let reason):
+            caseError(reason)
+        case .none:
+            break
         }
     }
     
@@ -91,6 +101,10 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         collectionView.reloadData()
     }
     
+    private func caseLogout() {
+        self.present(LoginBuilder().build(), animated: true)
+    }
+    
     private func caseError(_ reason: String) {
         errorStackView.isHidden = false
         collectionView.isHidden = true
@@ -99,7 +113,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     @IBAction func onRetryButtonTapped(_ sender: UIButton) {
-        viewModel.load()
+        Task {
+            await viewModel.load()
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -128,7 +144,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
         let characterFound = viewModel.characters[indexPath.row]
         print("Character found: \(characterFound.name)")
-        self.navigationController?.show(CharacterDetailBuilder(characterFound.id).build(), sender: nil)
+//        self.navigationController?.show(CharacterDetailBuilder(characterFound.id).build(), sender: nil)
     }
     
 }

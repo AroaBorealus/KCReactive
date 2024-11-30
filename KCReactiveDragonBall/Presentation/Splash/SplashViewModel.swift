@@ -24,12 +24,10 @@ final class SplashViewModel: ObservableObject {
     
     func load(){
         self.splashState = .loading
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {[weak self] in
-            self?.checkToken()
-        }
+        self.checkToken()
     }
     
     func checkToken() {
-        self.splashState = .hasToken
+        self.splashState = SessionDataSources.shared.hasSession() ? .hasToken : .noToken
     }
 }
