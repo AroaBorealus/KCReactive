@@ -39,7 +39,7 @@ class CharacterDetailViewController: UIViewController, UICollectionViewDataSourc
         
         bind()
 
-        title = "Detail"
+        title = viewModel.characterInfo.characterName
         Task {
             await viewModel.load()
         }
