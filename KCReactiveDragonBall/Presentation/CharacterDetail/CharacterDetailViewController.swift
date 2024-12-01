@@ -10,8 +10,8 @@ import Combine
 
 class CharacterDetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    let viewModel: CharacterDetailModel
-    private var subscriptor = Set<AnyCancellable>()
+    let viewModel: CharacterDetailViewModel
+    var subscriptor = Set<AnyCancellable>()
     
     @IBOutlet weak var characterImage: AsyncImageView!
     @IBOutlet weak var characterDescription: UILabel!
@@ -20,7 +20,7 @@ class CharacterDetailViewController: UIViewController, UICollectionViewDataSourc
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    init(_ viewModel: CharacterDetailModel) {
+    init(_ viewModel: CharacterDetailViewModel) {
         self.viewModel = viewModel
         super.init(nibName: "CharacterDetailView", bundle: Bundle(for: type(of: self)))
     }

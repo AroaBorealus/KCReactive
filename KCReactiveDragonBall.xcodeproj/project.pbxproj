@@ -12,9 +12,20 @@
 		D64B4C0C2CF8D2FB00FAE090 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D64B4C0B2CF8D2FB00FAE090 /* CombineCocoa */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D61557A12CFCC627000CEEAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D66437792CE544A000491423 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D66437802CE544A000491423;
+			remoteInfo = KCReactiveDragonBall;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D61557922CFCC1BD000CEEAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D61557982CFCC220000CEEAC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D615579D2CFCC627000CEEAC /* KCReactiveDragonBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCReactiveDragonBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66437812CE544A000491423 /* KCReactiveDragonBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KCReactiveDragonBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -29,6 +40,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		D615579E2CFCC627000CEEAC /* KCReactiveDragonBallTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KCReactiveDragonBallTests;
+			sourceTree = "<group>";
+		};
 		D66437832CE544A000491423 /* KCReactiveDragonBall */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -40,6 +56,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D615579A2CFCC627000CEEAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D664377E2CE544A000491423 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,6 +80,7 @@
 			children = (
 				D61557912CFCC1BD000CEEAC /* Localizable.strings */,
 				D66437832CE544A000491423 /* KCReactiveDragonBall */,
+				D615579E2CFCC627000CEEAC /* KCReactiveDragonBallTests */,
 				D66437822CE544A000491423 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				D66437812CE544A000491423 /* KCReactiveDragonBall.app */,
+				D615579D2CFCC627000CEEAC /* KCReactiveDragonBallTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +97,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D615579C2CFCC627000CEEAC /* KCReactiveDragonBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61557A32CFCC627000CEEAC /* Build configuration list for PBXNativeTarget "KCReactiveDragonBallTests" */;
+			buildPhases = (
+				D61557992CFCC627000CEEAC /* Sources */,
+				D615579A2CFCC627000CEEAC /* Frameworks */,
+				D615579B2CFCC627000CEEAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D61557A22CFCC627000CEEAC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D615579E2CFCC627000CEEAC /* KCReactiveDragonBallTests */,
+			);
+			name = KCReactiveDragonBallTests;
+			packageProductDependencies = (
+			);
+			productName = KCReactiveDragonBallTests;
+			productReference = D615579D2CFCC627000CEEAC /* KCReactiveDragonBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D66437802CE544A000491423 /* KCReactiveDragonBall */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D66437942CE544A100491423 /* Build configuration list for PBXNativeTarget "KCReactiveDragonBall" */;
@@ -106,6 +154,10 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					D615579C2CFCC627000CEEAC = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = D66437802CE544A000491423;
+					};
 					D66437802CE544A000491423 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -131,11 +183,19 @@
 			projectRoot = "";
 			targets = (
 				D66437802CE544A000491423 /* KCReactiveDragonBall */,
+				D615579C2CFCC627000CEEAC /* KCReactiveDragonBallTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D615579B2CFCC627000CEEAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D664377F2CE544A000491423 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +207,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D61557992CFCC627000CEEAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D664377D2CE544A000491423 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,6 +222,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D61557A22CFCC627000CEEAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D66437802CE544A000491423 /* KCReactiveDragonBall */;
+			targetProxy = D61557A12CFCC627000CEEAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D61557912CFCC1BD000CEEAC /* Localizable.strings */ = {
@@ -169,6 +244,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D61557A42CFCC627000CEEAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6PFU32ZGFM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aroaborealus.KCReactiveDragonBallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KCReactiveDragonBall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KCReactiveDragonBall";
+			};
+			name = Debug;
+		};
+		D61557A52CFCC627000CEEAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6PFU32ZGFM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aroaborealus.KCReactiveDragonBallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KCReactiveDragonBall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KCReactiveDragonBall";
+			};
+			name = Release;
+		};
 		D66437952CE544A100491423 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -357,6 +468,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D61557A32CFCC627000CEEAC /* Build configuration list for PBXNativeTarget "KCReactiveDragonBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61557A42CFCC627000CEEAC /* Debug */,
+				D61557A52CFCC627000CEEAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D664377C2CE544A000491423 /* Build configuration list for PBXProject "KCReactiveDragonBall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

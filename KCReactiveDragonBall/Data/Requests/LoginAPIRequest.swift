@@ -8,6 +8,8 @@
 import Foundation
 
 struct LoginAPIRequest: APIRequest {
+    
+    
     typealias Response = Data
     
     let headers: [String: String]

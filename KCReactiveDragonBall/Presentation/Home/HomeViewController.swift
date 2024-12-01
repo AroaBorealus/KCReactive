@@ -11,7 +11,7 @@ import Combine
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     let viewModel: HomeViewModel
-    private var subscriptor = Set<AnyCancellable>()
+    var subscriptor = Set<AnyCancellable>()
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!

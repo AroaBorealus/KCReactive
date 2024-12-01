@@ -12,7 +12,7 @@ import CombineCocoa
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
     private let viewModel: LoginViewModel
-    private var subscriptor = Set<AnyCancellable>()
+    var subscriptor = Set<AnyCancellable>()
     private var currentUsername = ""
     private var currentPassword = ""
     
@@ -73,7 +73,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             .store(in: &subscriptor)
     }
     
-    private func bind(){
+    func bind(){
         viewModel.$loginState
             .receive(on: DispatchQueue.main)
             .sink { [weak self] state in
@@ -105,10 +105,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginButton.isHidden = false
         activityIndicator.stopAnimating()
         errorLabel.isHidden = true
-        print("FUNCIONA")
         self.present(HomeBuilder().build(), animated: true)
     }
-        
+
     private func caseError(_ reason: String) {
         loginButton.isHidden = false
         activityIndicator.stopAnimating()

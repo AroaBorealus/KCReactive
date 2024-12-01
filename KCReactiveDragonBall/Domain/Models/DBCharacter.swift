@@ -21,6 +21,15 @@ struct DBCharacter: DBUnit{
         self.description = ""
         self.favorite = false
     }
+    
+    init(name: String, photo: String, id: String, description: String, favorite: Bool){
+        self.name = name
+        self.photo = photo
+        self.id = id
+        self.description = description
+        self.favorite = false
+    }
+
 }
 
 struct CustomCodableCharacter: Codable {

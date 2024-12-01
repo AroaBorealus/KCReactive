@@ -1,5 +1,5 @@
 //
-//  CharacterDetailModel.swift
+//  CharacterDetailViewModel.swift
 //  KCReactiveDragonBall
 //
 //  Created by Aroa Miguel Garcia on 30/11/24.
@@ -19,7 +19,7 @@ enum CharacterDetailStates: Equatable {
     case none
 }
 
-final class CharacterDetailModel {
+final class CharacterDetailViewModel {
     let characterUseCase: GetCharacterUseCaseContract
     let transformationsUseCase: GetAllTransformationsUseCaseContract
     let characterInfo: CharacterInfo
