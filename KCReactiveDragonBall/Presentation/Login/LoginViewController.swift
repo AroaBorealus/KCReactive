@@ -7,11 +7,14 @@
 
 import UIKit
 import Combine
+import CombineCocoa
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
     private let viewModel: LoginViewModel
     private var subscriptor = Set<AnyCancellable>()
+    private var currentUsername = ""
+    private var currentPassword = ""
     
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
@@ -38,6 +41,32 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     private func configureView(){
         emailTextField.delegate = self
         passwordTextField.delegate = self
+        
+        self.loginButton.tapPublisher
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] _ in
+                self?.handlerLoginButton()
+            })
+            .store(in: &subscriptor)
+        
+        self.emailTextField.textPublisher
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] username in
+                if let username{
+                    self?.currentUsername = username
+                    self?.loginButton.isEnabled = username.count >= 5 && username.contains("@")
+                }
+            })
+            .store(in: &subscriptor)
+        
+        self.passwordTextField.textPublisher
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] password in
+                if let password{
+                    self?.currentPassword = password
+                }
+            })
+            .store(in: &subscriptor)
     }
     
     private func bind(){
@@ -83,7 +112,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         errorLabel.text = reason
     }
     
-    @IBAction private func onLoginButtonTapped(_ sender: UIButton) {
+    private func handlerLoginButton(){
         Task {
             await viewModel.login(emailTextField.text, passwordTextField.text)
         }

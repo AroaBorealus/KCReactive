@@ -57,9 +57,6 @@
                                     <color key="tintColor" name="AccentColor"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="filled" title="Login"/>
-                                    <connections>
-                                        <action selector="onLoginButtonTapped:" destination="-1" eventType="touchUpInside" id="IJO-y7-qwA"/>
-                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
