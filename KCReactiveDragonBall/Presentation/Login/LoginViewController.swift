@@ -18,8 +18,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
-    @IBOutlet private weak var errorLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet private weak var errorLabel: UILabel!
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     
     init(_ loginViewModel: LoginViewModel) {
@@ -41,6 +41,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     private func configureView(){
         emailTextField.delegate = self
         passwordTextField.delegate = self
+        
+        emailTextField.placeholder = NSLocalizedString("Email",comment:"Email del usuario")
+        passwordTextField.placeholder = NSLocalizedString("Password",comment:"Contraseña del usuario")
+        loginButton.setTitle(NSLocalizedString("Login",comment:"Botón de login"), for: .normal)
         
         self.loginButton.tapPublisher
             .receive(on: DispatchQueue.main)

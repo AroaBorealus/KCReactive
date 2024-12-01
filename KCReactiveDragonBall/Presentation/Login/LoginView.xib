@@ -14,7 +14,7 @@
                 <outlet property="activityIndicator" destination="WRg-Zy-W40" id="1iD-J4-tba"/>
                 <outlet property="emailTextField" destination="NiY-26-p7g" id="d20-m6-1Xw"/>
                 <outlet property="errorLabel" destination="gCA-Eo-094" id="pWn-qN-fnN"/>
-                <outlet property="loginButton" destination="kru-ep-Hdy" id="u5j-iM-g0u"/>
+                <outlet property="loginButton" destination="kru-ep-Hdy" id="PE5-kV-cuK"/>
                 <outlet property="passwordTextField" destination="FKR-GM-L1S" id="hmE-MV-bAM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -33,12 +33,12 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="URe-KA-d0A">
                             <rect key="frame" x="12" y="12" width="321" height="207.66666666666666"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NiY-26-p7g" userLabel="emailTextField">
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NiY-26-p7g" userLabel="emailTextField">
                                     <rect key="frame" x="0.0" y="0.0" width="321" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FKR-GM-L1S" userLabel="passwordTextField">
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FKR-GM-L1S" userLabel="passwordTextField">
                                     <rect key="frame" x="0.0" y="46" width="321" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>

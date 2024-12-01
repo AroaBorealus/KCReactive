@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D61556612CFA2403000CEEAC /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D61556602CFA2403000CEEAC /* KeychainSwift */; };
+		D61557932CFCC1BD000CEEAC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D61557912CFCC1BD000CEEAC /* Localizable.strings */; };
 		D64B4C0C2CF8D2FB00FAE090 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D64B4C0B2CF8D2FB00FAE090 /* CombineCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D61557922CFCC1BD000CEEAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D61557982CFCC220000CEEAC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D66437812CE544A000491423 /* KCReactiveDragonBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KCReactiveDragonBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,6 +55,7 @@
 		D66437782CE544A000491423 = {
 			isa = PBXGroup;
 			children = (
+				D61557912CFCC1BD000CEEAC /* Localizable.strings */,
 				D66437832CE544A000491423 /* KCReactiveDragonBall */,
 				D66437822CE544A000491423 /* Products */,
 			);
@@ -108,11 +112,12 @@
 				};
 			};
 			buildConfigurationList = D664377C2CE544A000491423 /* Build configuration list for PBXProject "KCReactiveDragonBall" */;
-			developmentRegion = en;
+			developmentRegion = es;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = D66437782CE544A000491423;
 			minimizedProjectReferenceProxies = 1;
@@ -135,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61557932CFCC1BD000CEEAC /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +155,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D61557912CFCC1BD000CEEAC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D61557922CFCC1BD000CEEAC /* en */,
+				D61557982CFCC220000CEEAC /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D66437952CE544A100491423 /* Debug */ = {
@@ -220,6 +238,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -283,6 +302,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
