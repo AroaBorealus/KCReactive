@@ -13,6 +13,14 @@ struct DBCharacter: DBUnit{
     var id: String
     var description: String
     let favorite: Bool
+    
+    init(){
+        self.name = ""
+        self.photo = ""
+        self.id = ""
+        self.description = ""
+        self.favorite = false
+    }
 }
 
 struct CustomCodableCharacter: Codable {

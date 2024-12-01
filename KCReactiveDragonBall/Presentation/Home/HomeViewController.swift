@@ -143,8 +143,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             return
         }
         let characterFound = viewModel.characters[indexPath.row]
-        print("Character found: \(characterFound.name)")
-//        self.navigationController?.show(CharacterDetailBuilder(characterFound.id).build(), sender: nil)
+        let characterInfo = CharacterInfo(characterName: characterFound.name, characterId: characterFound.id)
+        self.navigationController?.show(CharacterDetailBuilder(characterInfo).build(), sender: nil)
     }
     
 }
